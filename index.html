@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Control de Asistencia</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Control de Asistencia</h1>
+        <form id="attendanceForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="date">Fecha:</label>
+            <input type="datetime-local" id="date" name="date" required>
+            <!-- <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>-->
+            <button type="submit">Registrar Asistencia</button> 
+        </form>
+        <div id="attendanceList">
+            <h2>Lista de Asistencia</h2>
+            <ul id="list">
+                <!-- Los registros de asistencia aparecerán aquí -->
+            </ul>
+            <button id="delete">Delete</button>
+        </div>
+    </div>
+    <script id="delete" src="main.js"></script>
+</body>
+</html>
